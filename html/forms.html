@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!-- form -->
+    <form method="post" enctype="multipart/form-data">
+        <div>
+            <label for="email">Email</label>
+            <input type="email"  name="email" id="email" placeholder="john@cena.com" required>
+        </div>
+        <div>
+            <label for="username">Username</label>
+            <input type="text"  name="username" id="username" placeholder="johncena001">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password"  name="password" id="password" placeholder="password">
+        </div>
+        <div>
+            <label for="url">Website</label>
+            <input type="url"  name="url" id="url" placeholder="www.hello.com">
+        </div>
+        <div>
+            <label for="phone">Phone Number</label>
+            <input type="tel"  name="phone" id="phone" placeholder="7894561230" maxlength="10">
+        </div>
+        <div>
+            <label for="date">Date</lable>
+            <input type="date"  name="date" id="date" placeholder="date">
+        </div>
+        <div>
+            <label for="file">Uplaod a file</lable>
+            <input type="file"  name="file" id="file" placeholder="file">
+        </div>
+        <div>
+            <input type="submit" value="Save This Data">
+            <input type="reset" value="Clear The Data">
+        </div>
+    </form>
+    <hr>
+    <form>
+        <div>
+            <!-- drop -->
+            <select name="color" id="color">
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green" selected>Green</option>
+                <option value="yellow">Yellow</option>
+            </select>
+        </div>
+        <div>
+            <!-- radio button -->
+            <label >Select An Option</label>
+            <label>
+                <input type="radio" name="choices" id="ch1" value="one">
+                Choice 1
+            </label>
+            <label>
+                <input type="radio" name="choices" id="ch2" value="two">
+                Choice 2
+            </label>
+            <label>
+                <input type="radio" name="choices" id="ch3" value="three">
+                Choice 3
+            </label>
+        </div>
+        <div>
+            <!-- checkbox -->
+            <label>Select An Option</label>
+            <label>
+                <input type="checkbox" name="choice1" id="ch1" value="one">
+                Choice 1
+            </label>
+            <label>
+                <input type="checkbox" name="choice2" id="ch2" value="two">
+                Choice 2
+            </label>
+            <label>
+                <input type="checkbox" name="choice3" id="ch3" value="three">
+                Choice 3
+            </label>
+            <input type="range"  name="limit" id="limit">
+            <input type="text" name="movies" id="movies" list="movie-list">
+            <datalist id="movie-list">
+                <option value="Avengers"></option>
+                <option value="Inception"></option>
+                <option value="Martin"></option>
+                <option value="Mission Imposiibile"></option>
+            </datalist>
+            <input type="image" src="../images/image6.svg" alt="svg image " width="64">
+        </div>
+    </form>
+</body>
+</html>

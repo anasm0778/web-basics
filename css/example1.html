@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            background-color: antiquewhite;
+        }
+        p{
+            color: red;
+            font-style: oblique;
+        }
+        h3{
+            color: blue;
+        }
+        .item{
+            color: red;
+        }
+        #item2{
+            color: blueviolet;
+        }
+        .subitem2{
+            color: brown;
+            border: 1px solid black;        
+        }
+        .subitem2:hover{
+            color: black;
+        }
+    </style>
+    <h3>Selectors</h3>
+    <ul>
+        <li>Tag Selectors
+            <ul id="subitem2">
+                <li>p { }</li>
+                <li>h1 { }</li>
+                <li>a { }</li>
+            </ul>
+        </li>
+        <li id="item2">Id Selectors
+            <ul class="subitem2">
+                <li>#menu { }</li>
+                <li>#header { }</li>
+                <li>#footer { }</li>
+            </ul>
+        </li>
+        <li class="item"> Class Selectors
+            <ul class="subitem2">
+                <li>.menu { }</li>
+                <li>.header</li>
+                <li>.footer</li>
+            </ul>
+        </li>
+        <li> Pseudo code Selector
+            <ul class="subitem2">
+                <li>a:hover</li>
+                <li>a:active</li>
+                <li>a: visited</li>
+            </ul>
+        </li>
+        <li> Universal Selector
+            <ul class="subitem2">
+                <li>*{ }</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
