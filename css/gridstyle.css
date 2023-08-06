@@ -96,7 +96,7 @@ main{
     /* hover effect img */
     &:hover .thumb{
         /* change filter */
-        filter: hue-rotate(180deg);
+        filter: hue-rotate(90deg);
 
     }
     
