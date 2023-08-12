@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        main{
+            display: grid;
+            height: 1000px;
+            width: 900px;
+            outline: 3px solid black;
+            margin-left: 275px;
+            grid-template-areas: 
+            "photo name"
+            "skills intro"
+            "skills pro1"
+            "hobbies pro2"
+            "something pro2";
+        }
+        .box1{
+            grid-area: photo;
+            height: 250px;
+            width: 250px;
+            border-radius: 150px;
+            background-color: rgb(96, 209, 3);
+            outline: 3px solid black;
+            margin :20px;
+        }
+        .box2{
+            grid-area: name;
+            height: 200px;
+            width: 600px;
+            margin: 20px;
+            margin-top: 40px;
+        }
+        .box3{
+            grid-area: skills;
+            height: 430px;
+            width: 250px;
+            background-color: rgb(13, 16, 206);
+            outline: 3px solid black;
+            margin: 20px;
+        }
+        .box4{
+            grid-area: intro;
+            height: 135px;
+            width: 585px;
+            background-color: rgb(96, 124, 124);
+            outline: 3px solid black;
+            margin: 20px;
+            margin-left: 0px;
+        }
+        .box5{
+            grid-area: pro1;
+            height: 275px;
+            width: 585px;
+            background-color: rgb(243, 42, 200);
+            outline: 3px solid black;
+            margin: 20px;
+            margin-left: 0px;
+            margin-top: 0px;
+        }
+        .box6{
+            grid-area: pro2;
+            height: 220px;
+            width: 585px;
+            background-color: rgb(200, 218, 44);
+            outline: 3px solid black;
+            margin: 20px;
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+        .box7{
+            grid-area: hobbies;
+            height: 100px;
+            width: 250px;
+            background-color: rgb(9, 202, 83);
+            outline: 3px solid black;
+            margin: 20px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        .box8{
+            grid-area: something;
+            height: 100px;
+            width: 250px;
+            background-color: rgb(37, 71, 71);
+            outline: 3px solid black;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="box1"></div>
+        <div class="box2"><p>Name</p><p>Address</p><p>Email</p><p>Linkdedin</p><p>Github</p></div>
+        <div class="box3"><p>box3</p></div>
+        <div class="box4"><p>box4</p></div>
+        <div class="box5"><p>box5</p></div>
+        <div class="box6"><p>box6</p></div>
+        <div class="box7"><p>box7</p></div>
+        <div class="box8"><p>box8</p></div>
+    </main>
+</body>
+</html>
