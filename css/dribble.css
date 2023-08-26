@@ -25,6 +25,11 @@ section.container{
 footer{
     height: 25rem;
     background-color: #f8f5f5;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    padding-right: 100px;
+    flex-direction: column;
 }
 nav{
     display: grid;
@@ -111,3 +116,17 @@ section.hero{
     gap: 36px;
     padding: 55px;
 }
+.foot1{
+    padding-bottom: 500px;
+}
+.foot1 img{
+    padding-bottom: 20px;
+}
+.foot1 p{
+    padding-bottom: 20px;
+}
+footer ul li{
+    list-style: none;
+    padding: 6px;
+}
+
