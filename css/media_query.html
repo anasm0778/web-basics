@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media_Query</title>
+    <style>
+        *{
+            background-color: rgb(176, 255, 229);
+        }
+        h2{
+            color: red
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        li{
+            padding: 10px;
+            background-color: beige;
+            margin: 10px 0;
+            outline: 1px solid black;
+        }
+        @keyframes shake {
+            0%{
+                transform: translateY(-3rem);
+            }
+            33%{
+                transform: translateY(3rem);
+            }
+            66%{
+                transform: rotateZ(360deg);
+                background-color: red;
+            }
+        }
+        li{
+            animation-name: shake;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+            animation-play-state: paused;
+        }
+        li:first-child{
+            animation-delay: 100ms;
+        }
+        /* phone */
+        @media (max-width: 600px) {
+            ul{
+                justify-content: center;
+                align-items: stretch;
+                height: 200px;
+                gap: 2px;
+            }
+            li{
+                padding: 20px;
+                background-color: #ccc;
+                margin: 0;
+                border-radius: 100px;
+                
+            }
+        }
+        /* tablet */
+        @media (min-width: 600px) and (max-width: 900px) {
+            h2{
+                color: black;
+            }
+            li{
+                animation: shake 1s infinite;
+            }
+        }
+        /* desktop */
+        @media (min-width: 900px){
+            h2{
+                color: blue;
+            }
+        }
+        /* extra large screen */
+        @media (min-width: 1200px) {
+            
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h2>Welcom to Media Query</h2>
+        <ul>
+            <li>Lorem.</li>
+            <li>Lorem.</li>
+            <li>lorem</li>
+            <li>loewm1l</li>
+            <li>lorem</li>
+            <li>lorem</li>
+        </ul>
+    </main>
+</body>
+</html>

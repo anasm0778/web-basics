@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        h1{
+            text-align: center;
+            font-style: italic;
+            margin: 50px 50px 25px 50px;
+            outline: 2px solid black;
+            align-items: center;
+            background-color: rgb(9, 245, 135);
+            border-radius: 5px;
+        }
+        h1:hover{
+            color: rgb(11, 7, 240);
+        }
+        .container{
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            grid-column-gap: 25px;
+            grid-row-gap: 25px;
+            
+        }
+        .box {
+            outline: 2px  solid black;
+            border-radius: 5px;
+            background-color: rgb(16, 243, 156);
+        }
+        .box2 {
+            outline: 2px  solid black;
+            border-radius: 5px;
+            background-color: rgb(9, 163, 224);
+        }
+        .anchor{
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            background-color: rgb(210, 247, 5);
+            text-decoration: none;
+            font-style: italic;
+            color: black;
+            font-weight: bold;
+        }
+        .anchor2{
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            background-color: rgb(2, 66, 92);
+            text-decoration: none;
+            font-style: italic;
+            color: black;
+            font-weight: bold;
+        }
+        .box p{
+            font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+            text-align: center;
+            font-size: 1rem;
+            padding: 15px 5px 15px 5px;
+            color: black;
+        }
+        .box2 p{
+            font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+            text-align: center;
+            font-size: 1rem;
+            padding: 15px 5px 15px 5px;
+            color: black;
+        }
+        @keyframes shake {
+            0%{
+                transform: translateY(-3rem);
+            }
+            33%{
+                transform: translateY(3rem);
+            }
+            66%{
+                transform: rotateZ(360deg);
+                background-color: beige;
+            }
+        }
+        .box{
+            animation-name: shake;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+        }
+        .box2 p:hover{
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>
+            The JavaScript Basics
+        </h1>
+        <div class="container">
+            <div class="box">
+                <a  href="" class="anchor">Lorem, ipsum dolor.</a>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque neque labore laudantium amet id quidem, suscipit nobis cupiditate vel accusamus nostrum autem eaque sed hic officia delectus cumque quas accusantium!</p>
+            </div>
+            <div class="box2">
+                <a  href="" class="anchor2">Eaque, qui pariatur.</a>
+                <p>Excepturi fugit quae aliquam autem ut, illum qui totam rerum molestiae sequi praesentium nulla inventore optio expedita voluptates? Similique rem veniam tempore temporibus aperiam, esse ex voluptate earum ea quis!</p>
+            </div>
+            <div class="box">
+                <a  href="" class="anchor">Non, doloribus facilis.</a>
+                <p>Corrupti, quibusdam? Dolore placeat eligendi voluptates recusandae ex et doloremque labore nemo minus doloribus, explicabo eius porro facilis suscipit libero quod fuga inventore, aperiam quibusdam corrupti praesentium dolorum minima? Provident?</p>
+            </div>
+            <div class="box2">
+                <a  href="" class="anchor2">Voluptate, fugiat minus.</a>
+                <p>Ipsum, ipsam. In voluptas aperiam ea ad, reprehenderit distinctio temporibus repellendus. Voluptates perferendis rem velit cum? Hic, ipsam magni vero voluptatum eveniet, dolor tempora exercitationem deserunt soluta eligendi rem ducimus.</p>
+            </div>
+            <div class="box">
+                <a  href="" class="anchor">Possimus, quae velit!</a>
+                <p>Maiores praesentium ad dicta quidem et aliquam ratione dolorem commodi tempora quos quod vitae ut perferendis, rem repudiandae, at libero consectetur autem totam veniam incidunt! Id deleniti laborum incidunt accusamus!</p>
+            </div>
+            <div class="box2">
+                <a  href="" class="anchor2">Placeat, animi asperiores?</a>
+                <p>Repellat doloremque, similique vitae, assumenda ad rem cupiditate quos recusandae numquam beatae, inventore dolores aut. Cumque fugit nesciunt aspernatur blanditiis, quidem, accusamus ipsum sequi tempora, quisquam magnam reprehenderit quos fuga!</p>
+            </div>
+            <div class="box">
+                <a  href="" class="anchor">Earum, error at?</a>
+                <p>Laudantium officia architecto soluta deserunt consequuntur temporibus reiciendis mollitia ex quo aliquam ratione incidunt iste ad ab fugit, aut quidem accusantium totam non est sequi libero veniam! Repellendus, nulla nemo?</p>
+            </div>
+            <div class="box2">
+                <a  href="" class="anchor2">Nam, quas aspernatur!</a>
+                <p>Ut, impedit deleniti! Neque libero aut nostrum perferendis illum quis dicta numquam quibusdam doloremque, dolores quasi enim at alias quidem, eius sequi non temporibus porro molestiae rerum corporis magnam aspernatur.</p>
+            </div>
+            <div class="box">
+                <a  href="" class="anchor">Dignissimos, totam corrupti.</a>
+                <p>Exercitationem voluptate molestiae pariatur repellat cum. Nesciunt consequatur excepturi tempore aspernatur dolores libero fugit debitis, quos sint a assumenda cumque corrupti impedit necessitatibus laudantium illo, voluptates maiores ipsa blanditiis temporibus?</p>
+            </div>
+            <div class="box2">
+                <a  href="" class="anchor2">Placeat, animi asperiores?</a>
+                <p>Repellat doloremque, similique vitae, assumenda ad rem cupiditate quos recusandae numquam beatae, inventore dolores aut. Cumque fugit nesciunt aspernatur blanditiis, quidem, accusamus ipsum sequi tempora, quisquam magnam reprehenderit quos fuga!</p>
+            </div>
+        </div>
+    </main>
+    <script>
+        console.log("Javascripts works");
+        var paragraphs = document.querySelectorAll(".box")
+        console.log(paragraphs)
+        // all paragraph to red
+        for(var i = 0; i < paragraphs.length; i++){
+            paragraphs[i].style.color = "red"
+        }
+        // same this is as above but using for Each
+        paragraphs.forEach((p)=>{
+            p.style.color = "green"
+        })
+    </script>
+</body>
+</html>
