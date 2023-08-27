@@ -15,11 +15,12 @@
     --grid-gap:24px;
 }
 section.filter{
-    height: 2rem;
+    height: 4rem;
     background-color: blueviolet;
+    font-size: larger;
 }
 section.container{
-    height: 183rem;
+    height: 200rem;
     background-color: #ffffff;
 }
 footer{
@@ -38,7 +39,10 @@ nav{
     padding: 0 var(--nav-padding-gutter);
     gap: var(--grid-gap);
     align-items: center;
-    
+}
+.head1{
+    text-decoration: solid;
+    color: black;
 }
 nav ul{
     display: flex;
@@ -46,7 +50,6 @@ nav ul{
     justify-content: flex-start;
     align-items: center;
     gap: var(--grid-gap);
-    text-decoration: none;
 }
 .auth-menu{
     display: flex;
@@ -62,6 +65,8 @@ nav ul{
     padding: 0 16px;
     height: 48px;
     border-radius: .5rem;
+    text-decoration: solid;
+    color: black;
 }
 .signup{
     background-color: var(--color-secondary);
@@ -94,6 +99,8 @@ section.hero{
 .catagories{
     display: flex;
     gap: 2rem;
+    padding-top: 100px;
+    padding-bottom: 50px;
     .category{
         display:flex;
         align-items: center;
@@ -101,14 +108,34 @@ section.hero{
         height: 48px;
         border-radius:32px;
         color: var(--color-secondary);
+        text-decoration: solid;
+        font-size: larger;
     }
     .category:hover{
         background-color: var(--color-tertiary);
         color: var(--color-primary);
     }
 }
+.search-area{
+    padding: 50px;
+}
+.trends-link{
+    text-decoration: solid;
+    color:black;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 32px;
+    color: var(--color-secondary);
+}
+.trends-link:hover{
+    background-color: var(--color-tertiary);
+    color: var(--color-primary);
+}
 .hero-content{
     text-align: center;
+    padding: 35px;
+    color: white;
+    font-size: larger;
 }
 .pictures{
     display: flex;
@@ -129,4 +156,3 @@ footer ul li{
     list-style: none;
     padding: 6px;
 }
-

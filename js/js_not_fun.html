@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js example 2</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            margin-top: 1rem;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: #e49595;
+            box-shadow: 0px 0px 4px #333;
+        }
+        .controls{
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <input type="range" id="r1">
+    <h1>Welcome To User Interaction</h1>
+    <div class="controls">
+        <label>Height<input type="number" placeholder="height" id="height"></label>
+        <label>Width<input type="number" placeholder="width" id="width"></label>
+        <label>Rotation X <input type="number" id="rotX"></label>
+        <label>Rotation X <input type="number" id="rotY"></label>
+        <label >Color<input type="color" id="color"></label>
+    </div>
+    <div class="grid">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <script>
+        var r1 = document.querySelector('#r1');
+        r1.addEventListener('change',()=>{
+            document.querySelector('h1').style.fontSize = r1.value + 'px'
+        })
+        
+    </script>
+</body>
+</html>
