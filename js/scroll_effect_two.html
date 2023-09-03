@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll_Effect_Two</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: all 0.5 ease-in-out;
+            
+        }
+        main{
+            height: 1000vh;
+        }
+        .container{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            padding: .5rem;
+            margin: 0;
+            font-size: 3rem;
+        }
+        p{
+            margin: 0;
+        }
+        /* color of containers */
+        .container:nth-child(1){
+            background-color: yellowgreen;
+        }
+        .container:nth-child(2){
+            background-color: lightseagreen;
+        }
+        .container:nth-child(3){
+            background-color: rosybrown;
+        }
+        .container:nth-child(4){
+            background-color: peru;
+        }
+        .container:nth-child(5){
+            background-color: rgb(73, 181, 224);
+        }
+        .fade-to-black{
+            background-color: rgb(0, 0, 0) !important;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="container">
+            <h1>Lorem.</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt ea voluptatum nostrum accusantium, omnis voluptate id dolores, ipsa totam voluptates fugiat quis sequi assumenda. Tenetur amet laborum id odio odit.</p>
+            <p>Voluptates tenetur quas unde optio ratione corrupti voluptatum doloribus quo laudantium ut. Incidunt eius, ipsam obcaecati exercitationem ipsum fugiat ea veniam architecto tempora molestias tempore atque fuga consectetur pariatur et!</p>
+        </section>
+        <section class="container">
+            <h1>Officia.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, a doloribus facilis odio repellat assumenda consequatur! Magnam commodi perferendis dicta quia? Iste nobis sapiente exercitationem adipisci fugit cum et eligendi.</p>
+            <p>Et enim repellat corrupti fugiat! Quaerat, nostrum. Earum repellendus, minima rem exercitationem, quia totam obcaecati laudantium suscipit quis laborum nulla eveniet nemo at temporibus deleniti labore vitae odit sunt nam.</p>
+        </section>
+        <section class="container">
+            <h1>Repellat.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis quam modi officiis sequi fuga, in eius nulla mollitia enim deleniti eligendi vel? Aspernatur libero asperiores dignissimos culpa, quas numquam sit!</p>
+            <p>Id quia quisquam provident voluptatum mollitia delectus beatae nemo aliquid animi praesentium at nobis, ducimus ab nam laborum consequuntur optio. Similique, ullam corporis unde voluptate eius aliquid repellendus adipisci aspernatur?</p>
+        </section>
+        <section class="container">
+            <h1>Corrupti?</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quisquam commodi dolor ex molestias necessitatibus magni assumenda quae? Labore autem aperiam, explicabo optio quia nam libero repellendus officiis sapiente suscipit.</p>
+            <p>Maiores a neque deserunt culpa illo quia, tempore quasi expedita dolores veniam odit magni magnam placeat, dicta cum sit officiis sapiente, nihil facere ab quis labore delectus porro velit. Delectus.</p>
+        </section>
+        <section class="container">
+            <h1>Distinctio.</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, odio nam. Accusamus, illo, qui saepe optio eaque ratione veniam excepturi repellendus fugiat, voluptatibus blanditiis minus. Iste dolore dicta praesentium eligendi?</p>
+            <p>Beatae numquam, similique, delectus, rerum laboriosam rem modi consequuntur architecto sit temporibus illum eaque? Molestias libero quibusdam minus dicta consectetur voluptatem voluptas eum nostrum repellendus. Deleniti recusandae voluptatem quibusdam vel.</p>
+        </section>
+    </main>
+    <script>
+        var controller = new ScrollMagic.Controller();
+        var  indexes = [1,2,3,4,5]
+       indexes.forEach(function (index){
+            var scene = new ScrollMagic.Scene({
+                triggerElement: `.container:nth-child(${index})`,
+                duration: '50%',
+                triggerHook: 0,
+            })
+       
+            .setClassToggle(`.container:nth-child(${index})`,'fade-to-black')
+            .addIndicators({name: `Slide ${index}`})
+            controller.addScene([
+                scene
+            ])
+        })
+    </script>
+</body>
+</html>
